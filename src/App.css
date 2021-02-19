@@ -1,5 +1,5 @@
 .App {
-  color: white;
+  color: #764abc;
   text-align: center;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .App-header {
-  /* background-color: #282c34; */
+  background-color: #282c34;
   min-height: 20vh;
   display: flex;
   flex-direction: column;
@@ -21,6 +21,11 @@
 
 .App-nav,
 a {
+  background-color: #282c34;
   color: #61dafb;
   margin-left: 20px;
+}
+
+.bg-dark {
+  background-color: #282c34!important;
 }
