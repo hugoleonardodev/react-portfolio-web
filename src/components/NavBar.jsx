@@ -28,8 +28,8 @@ const NavBar = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Media src={reactLogo} style={{maxWidth: "25vw", maxHeight: "25vw", display: "unset"}} alt="rocket"/>
         </Collapse>
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+        <Collapse isOpen={isOpen} style={{justifyContent: "center"}} navbar>
+          <Nav navbar>
             <NavItem>
               <NavLink><Link to="/">Home</Link></NavLink>
             </NavItem>
@@ -42,11 +42,11 @@ const NavBar = (props) => {
             <NavItem>
               <NavLink><Link to="/about">About</Link></NavLink>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">
                 GitHub
               </NavLink>
-            </NavItem>
+            </NavItem> */}
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Connect with me
@@ -59,9 +59,9 @@ const NavBar = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-        <Collapse isOpen={isOpen} navbar>
-          <Media src={reduxLogo} style={{maxWidth: "20vw", maxHeight: "20vw", display: "unset"}} alt="rocket"/>
         </Collapse>
+        <Collapse isOpen={isOpen} style={{justifyContent: "center"}} navbar>
+          <Media src={reduxLogo} style={{maxWidth: "15vw", maxHeight: "15vw", display: "unset"}} alt="rocket"/>
         </Collapse>
       </Navbar>
     </div>
