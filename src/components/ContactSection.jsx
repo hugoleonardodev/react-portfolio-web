@@ -6,7 +6,6 @@ import {
   CardTitle,
   CardText,
   CardGroup,
-  CardSubtitle,
   CardBody,
   CardFooter,
   NavLink
