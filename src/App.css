@@ -3,9 +3,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 10vmin;
-  pointer-events: none;
+.media {
+  display: unset;
 }
 
 .App-header {
@@ -19,13 +18,17 @@
   /* color: white; */
 }
 
-.App-nav,
-a {
-  background-color: #282c34;
-  color: #61dafb;
-  margin-left: 20px;
+@media (prefers-reduced-motion: no-preference) {
+  .media {
+    animation: media-spin infinite 120s linear;
+  }
 }
 
-.bg-dark {
-  background-color: #282c34!important;
+@keyframes media-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
