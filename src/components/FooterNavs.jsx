@@ -16,31 +16,34 @@ const FooterNavs = (props) => {
 
   return (
     <div color="dark">
-      <Nav style={{ color: "dark", backgroundColor: "#282c34", display: "flex", justifyContent: "center", borderColor: "#61dafb" }} tabs>
-        <NavItem>
-          <NavLink href="#">Link</NavLink>
+      <Nav style={{ color: "dark", backgroundColor: "#282c34", display: "flex", justifyContent: "center" }} tabs>
+        <NavItem style={{ backgroundColor: "#282c34" }}>
+          <NavLink href="#">Home</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#">Another Link</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink disabled href="#">
-            Disabled Link
+          <NavLink href="#">
+            Projects
           </NavLink>
           <NavLink href="#">Link</NavLink>
           <NavLink href="#">Link</NavLink>
           <NavLink href="#">Link</NavLink>
         </NavItem>
-        <Dropdown style={{ backgroundColor: "#282c34", borderColor: "#61dafb" }} nav isOpen={dropdownOpen} toggle={toggle}>
-          <DropdownToggle style={{ backgroundColor: "#282c34", borderColor: "#61dafb" }} nav caret>
-            Dropdown
+        <NavItem>
+          <NavLink href="#">Contact</NavLink>
+          <NavLink href="#">LinkedIn</NavLink>
+          <NavLink href="#">GitHub</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="#">About</NavLink>
+        </NavItem>
+        <Dropdown style={{ backgroundColor: "#282c34" }} nav isOpen={dropdownOpen} toggle={toggle}>
+          <DropdownToggle style={{ backgroundColor: "#282c34" }} nav caret>
+            Connect with me
           </DropdownToggle>
           <DropdownMenu style={{ backgroundColor: "#282c34", borderColor: "#61dafb" }}>
-            <DropdownItem style={{ color: "#764abc" }} header>Header</DropdownItem>
-            <DropdownItem style={{ color: "#764abc" }} disabled>Action</DropdownItem>
-            <DropdownItem style={{ color: "#764abc" }}>Another Action</DropdownItem>
-            <DropdownItem divider />
-            <DropdownItem style={{ color: "#764abc" }}>Another Action</DropdownItem>
+            <DropdownItem style={{ color: "#764abc" }}>CodePen</DropdownItem>
+            {/* <DropdownItem divider /> */}
+            <DropdownItem style={{ color: "#764abc" }}>CodeSandBox</DropdownItem>
           </DropdownMenu>
         </Dropdown>
       </Nav>

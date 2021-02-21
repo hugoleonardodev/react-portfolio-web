@@ -31,33 +31,37 @@ const NavBar = (props) => {
         <Collapse isOpen={isOpen} style={{justifyContent: "center"}} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink><Link to="/">Home</Link></NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink><Link to="/projects">Projects</Link></NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink><Link to="/contact">Contact</Link></NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink><Link to="/about">About</Link></NavLink>
-            </NavItem>
-            {/* <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
+              <NavLink tag="div">
+                <Link to="/">Home</Link>
               </NavLink>
-            </NavItem> */}
-            <UncontrolledDropdown nav inNavbar>
+            </NavItem>
+            <NavItem>
+              <NavLink tag="div">
+                <Link to="/projects">Projects</Link>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink tag="div">
+                <Link to="/contact">Contact</Link>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink tag="div">
+                <Link to="/about">About</Link>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+            <UncontrolledDropdown tag="div" nav inNavbar>
               <DropdownToggle nav caret>
                 Connect with me
               </DropdownToggle>
               <DropdownMenu style={{ backgroundColor: "#282c34", borderColor: "#61dafb" }} right>
                 <DropdownItem style={{ color: "#764abc" }}>CodePen</DropdownItem>
                 <DropdownItem style={{ color: "#764abc" }}>CodeSandBox</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
+                {/* <DropdownItem divider /> */}
               </DropdownMenu>
             </UncontrolledDropdown>
+            </NavItem>
           </Nav>
         </Collapse>
         <Collapse isOpen={isOpen} style={{justifyContent: "center"}} navbar>

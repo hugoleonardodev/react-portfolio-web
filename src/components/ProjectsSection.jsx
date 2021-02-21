@@ -16,15 +16,16 @@ const ProjectsSection = (props) => {
   console.log(projects);
   return (
     <CardGroup
-      body
-      inverse
+      // body
+      // inverse
       style={{ backgroundColor: "#333", borderColor: "#000" }}
     >
-      {projects.map((project) => (
+      {projects.map((project, index) => (
         <Card
-          body
+          // body
           inverse
           style={{ backgroundColor: "#333", borderColor: "#61dafb" }}
+          key={index + 10000}
         >
           <CardImg top width="100%" src={project.image} alt="Card image cap" />
           <CardBody>
@@ -35,8 +36,8 @@ const ProjectsSection = (props) => {
             <CardText>{project.about}</CardText>
             {project.links.length > 0 ? (
               <CardFooter style={{ backgroundColor: "#282c34", borderColor: "#764abc" }}>
-                {project.links.map((link) => (
-                  <NavLink href={link}>{link}</NavLink>
+                {project.links.map((link, index) => (
+                  <NavLink key={index + 10000} href={link}>{link}</NavLink>
                 ))}
               </CardFooter>
             ) : (
