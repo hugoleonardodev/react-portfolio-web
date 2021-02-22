@@ -47,7 +47,7 @@ const NavBar = (props) => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag="div">
+              <NavLink tag="div" disabled>
                 <Link to="/about">About</Link>
               </NavLink>
             </NavItem>
