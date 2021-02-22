@@ -6,7 +6,7 @@ class Contact extends React.Component {
     return (
       <section className="App-contact">
         <h1>Contact section</h1>
-      <ContactSection />
+        <ContactSection />
       </section>
     ) ;
   }

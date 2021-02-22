@@ -3,21 +3,6 @@
   text-align: center;
 }
 
-.media {
-  display: unset;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 1vmin);
-  /* color: white; */
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .media {
     animation: media-spin infinite 120s linear;
