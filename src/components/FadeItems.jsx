@@ -6,34 +6,6 @@ const FadeItems = (props) => {
 
   const [count, setCount] = useState(0);
 
-//   const [mount, setMount] = useState(true);
-//   useEffect(() => {
-//      const timerId = setTimeout(() => {
-//        let mounted = true
-//         if (mount) {
-//           setMount(!mounted);
-//         }
-
-//      return () => {
-//         clearTimeout(timerId);
-//      }
-//   })
-// })
-  // const [mount, setMount] = useState(true);
-  // useEffect(() => {
-  //   // setTimeout(() => {
-  //     // let mounted = true
-  //       if (mount) {
-  //         mount = false;
-  //       }
-
-  //     return function cleanup() {
-  //         mounted = false
-  //     }
-  //     // setCount(0);
-  //   // }, 300)
-  // }) // prevent the unmounted component to be updated
-
   const { text } = props;
   return (
     <div style={{ backgroundColor: '#282c34', padding: '30px', borderBottom: "solid 2px #764abc"}}>

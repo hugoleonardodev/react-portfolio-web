@@ -16,7 +16,7 @@ import {
 } from "reactstrap";
 import reactLogo from '../images/react-logo.svg';
 import reduxLogo from '../images/redux-logo.svg';
-// sample with useState
+
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
