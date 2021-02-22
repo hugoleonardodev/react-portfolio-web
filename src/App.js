@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import NavBar from './components/NavBar';
 import FooterNavs from './components/FooterNavs';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/" component={Home}/>
       </Switch>
       <FooterNavs />
+      <Footer style={{ borderTop: "solid px #61dafb" }} />
     </main>
   );
 }

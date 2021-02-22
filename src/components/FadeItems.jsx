@@ -6,6 +6,19 @@ const FadeItems = (props) => {
 
   const [count, setCount] = useState(0);
 
+//   const [mount, setMount] = useState(true);
+//   useEffect(() => {
+//      const timerId = setTimeout(() => {
+//        let mounted = true
+//         if (mount) {
+//           setMount(!mounted);
+//         }
+
+//      return () => {
+//         clearTimeout(timerId);
+//      }
+//   })
+// })
   // const [mount, setMount] = useState(true);
   // useEffect(() => {
   //   // setTimeout(() => {

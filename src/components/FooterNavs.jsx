@@ -16,7 +16,7 @@ const FooterNavs = (props) => {
 
   return (
     <div color="dark">
-      <Nav style={{ color: "dark", backgroundColor: "#282c34", display: "flex", justifyContent: "center" }} tabs>
+      <Nav style={{ color: "dark", backgroundColor: "#282c34", display: "flex", justifyContent: "center", borderBottom: "none" }} tabs>
         <NavItem style={{ backgroundColor: "#282c34" }}>
           <NavLink href="#">Home</NavLink>
         </NavItem>

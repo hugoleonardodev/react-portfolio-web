@@ -11,7 +11,8 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  Media
+  Media,
+  CardLink
 } from "reactstrap";
 import reactLogo from '../images/react-logo.svg';
 import reduxLogo from '../images/redux-logo.svg';
@@ -56,8 +57,8 @@ const NavBar = (props) => {
                 Connect with me
               </DropdownToggle>
               <DropdownMenu style={{ backgroundColor: "#282c34", borderColor: "#61dafb" }} right>
-                <DropdownItem style={{ color: "#764abc" }}>CodePen</DropdownItem>
-                <DropdownItem style={{ color: "#764abc" }}>CodeSandBox</DropdownItem>
+                <DropdownItem><CardLink style={{ color: "#764abc" }}>CodePen</CardLink></DropdownItem>
+                <DropdownItem><CardLink style={{ color: "#764abc" }}>CodeSandBox</CardLink></DropdownItem>
                 {/* <DropdownItem divider /> */}
               </DropdownMenu>
             </UncontrolledDropdown>

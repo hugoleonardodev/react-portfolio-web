@@ -9,11 +9,12 @@ import {
   CardSubtitle,
   CardBody,
   CardFooter,
-  NavLink
+  NavLink,
+  CardLink
 } from "reactstrap";
 import { projects } from "../data/projects";
 const ProjectsSection = (props) => {
-  console.log(projects);
+  // console.log(projects);
   return (
     <CardGroup
       // body
@@ -43,7 +44,8 @@ const ProjectsSection = (props) => {
             ) : (
               <div />
             )}
-            <Button>Button</Button>
+            <CardLink href={project.code}><Button>CodeSandBox</Button></CardLink>
+            <CardLink href={project.live}><Button color="success">Live</Button></CardLink>
           </CardBody>
         </Card>
       ))}
